@@ -126,4 +126,4 @@ This project is built on top of [Nixtla's NeuralForecast](https://github.com/Nix
 
 ## 📝 License
 
-Apache 2.0 (inherited from NeuralForecast). See [LICENSE](./LICENSE).
+Apache 2.0. See [LICENSE](./LICENSE).
