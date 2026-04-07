@@ -22,7 +22,7 @@
 
 ### ⚙️ Enhanced Model Architectures
 
-Several model architectures have been modified to add **multivariable forecasting capabilities** that were **not available in the original NeuralForecast repository**. This enables models to ingest multiple input variables (e.g., precipitation, temperature, soil moisture) simultaneously for improved flood prediction. For example, models such as **Informer** and **PatchTST** have been enhanced with multivariable support for hydrological inputs, among other modifications across the codebase.
+Several model architectures have been modified to add **multivariable forecasting capabilities** that were **not available in the original NeuralForecast repository**. This enables models to ingest multiple input variables (e.g., precipitation, temperature etc.) simultaneously for improved hydrological prediction. For example, models such as **Informer** and **PatchTST** have been enhanced with multivariable support for hydrological inputs, among other modifications across the codebase.
 
 ### 📜 Custom Model Run Scripts
 
