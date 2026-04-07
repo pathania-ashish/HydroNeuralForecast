@@ -6,7 +6,7 @@
 
 <div align="center">
 <h1 align="center">HydroNeuralForecast</h1>
-<h3 align="center">Modified NeuralForecast for Hydrology & Flood Detection</h3>
+<h3 align="center">Modified NeuralForecast for Hydrology</h3>
 
 [![CI](https://github.com/Nixtla/neuralforecast/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/Nixtla/neuralforecast/actions/workflows/ci.yaml)
 [![Python](https://img.shields.io/pypi/pyversions/neuralforecast)](https://pypi.org/project/neuralforecast/)
