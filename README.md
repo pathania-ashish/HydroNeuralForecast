@@ -1,32 +1,52 @@
-# HydroNeuralForecast
+<div align="center">
 
-> **This repository is a modification of [Nixtla's NeuralForecast](https://github.com/Nixtla/neuralforecast) (v3.0.2).** The original library has been adapted for hydrological flood detection research, with custom modifications to model architectures and additional scripts for running models with exogenous variables.
+# 🌊 HydroNeuralForecast
+
+**Modified [Nixtla NeuralForecast](https://github.com/Nixtla/neuralforecast) (v3.0.2) for Hydrological Flood Detection**
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.10-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.5.1-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![CUDA](https://img.shields.io/badge/CUDA-12.4-76B900?logo=nvidia&logoColor=white)](https://developer.nvidia.com/cuda-toolkit)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)](./Dockerfile)
+
+</div>
 
 ---
 
-## What's Modified
+> 🔬 This repository adapts Nixtla's NeuralForecast library for hydrological flood detection research. Key modifications include **multivariable support for models that originally lacked it** in the upstream repository, along with custom run scripts for exogenous variable handling.
 
-### Modified Model Architectures
-- **Informer** (`neuralforecast/models/informer.py`) — customized for hydrology use case
-- **PatchTST** (`neuralforecast/models/patchtst.py`) — customized for hydrology use case
+---
 
-### Custom Model Run Scripts
+## 🔧 What's Modified
+
+### ⚙️ Enhanced Model Architectures
+
+The following models have been modified to add **multivariable forecasting capabilities** that were **not available in the original NeuralForecast repository**. This enables these models to ingest multiple input variables (e.g., precipitation, temperature, soil moisture) simultaneously for improved flood prediction:
+
+| Model | File | Modification |
+|---|---|---|
+| 🤖 **Informer** | `neuralforecast/models/informer.py` | Added multivariable support for hydrological inputs |
+| 📊 **PatchTST** | `neuralforecast/models/patchtst.py` | Added multivariable support for hydrological inputs |
+
+### 📜 Custom Model Run Scripts
+
+Ready-to-use scripts for running models with exogenous and multivariate configurations:
+
 | Script | Model | Description |
 |---|---|---|
-| `neuralforecast/informer_aa_exog.py` | Informer | With exogenous variables |
-| `neuralforecast/LSTM_aa_exog.py` | LSTM | With exogenous variables |
-| `neuralforecast/PatchTST_aa_exog.py` | PatchTST | With exogenous variables |
-| `neuralforecast/KAN_multi_exag.py` | KAN | Multivariate with exogenous |
-| `neuralforecast/nhits_aa_multi.py` | NHITS | Multivariate |
-| `neuralforecast/tft_aa_exog.py` | TFT | With exogenous variables |
+| 📄 `informer_aa_exog.py` | Informer | With exogenous variables |
+| 📄 `LSTM_aa_exog.py` | LSTM | With exogenous variables |
+| 📄 `PatchTST_aa_exog.py` | PatchTST | With exogenous variables |
+| 📄 `KAN_multi_exag.py` | KAN | Multivariate with exogenous |
+| 📄 `nhits_aa_multi.py` | NHITS | Multivariate |
+| 📄 `tft_aa_exog.py` | TFT | With exogenous variables |
 
 ---
 
-## Setup & Installation
+## 🚀 Setup & Installation
 
-### Option 1: Docker (Recommended)
+### 🐳 Option 1: Docker (Recommended)
 
 Build and run the Docker container which replicates the `neuralforecast_3.10` conda environment:
 
@@ -37,11 +57,11 @@ cd HydroNeuralForecast
 # Build the image
 docker build -t hydroneuralforecast .
 
-# Run interactively
+# Run interactively (with GPU support)
 docker run --gpus all -it hydroneuralforecast bash
 ```
 
-### Option 2: Conda + pip
+### 🐍 Option 2: Conda + pip
 
 ```bash
 git clone https://github.com/pathania-ashish/HydroNeuralForecast.git
@@ -61,32 +81,32 @@ pip install -e .
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 HydroNeuralForecast/
-├── neuralforecast/
-│   ├── models/            # All model architectures (modified: informer.py, patchtst.py)
-│   ├── losses/            # Loss functions
-│   ├── common/            # Base classes, modules, scalers
-│   ├── core.py            # NeuralForecast core engine
-│   ├── tsdataset.py       # Time series dataset handler
-│   ├── auto.py            # Auto model selection
-│   ├── informer_aa_exog.py    # Custom run scripts
-│   ├── LSTM_aa_exog.py
-│   ├── PatchTST_aa_exog.py
-│   ├── KAN_multi_exag.py
-│   ├── nhits_aa_multi.py
-│   └── tft_aa_exog.py
-├── Dockerfile             # Reproduces neuralforecast_3.10 environment
-├── requirements.txt       # Pinned pip dependencies
-├── setup.py
-└── pyproject.toml
+├── 📂 neuralforecast/
+│   ├── 📂 models/            # All model architectures (modified: informer.py, patchtst.py)
+│   ├── 📂 losses/            # Loss functions
+│   ├── 📂 common/            # Base classes, modules, scalers
+│   ├── 📄 core.py            # NeuralForecast core engine
+│   ├── 📄 tsdataset.py       # Time series dataset handler
+│   ├── 📄 auto.py            # Auto model selection
+│   ├── 📄 informer_aa_exog.py
+│   ├── 📄 LSTM_aa_exog.py
+│   ├── 📄 PatchTST_aa_exog.py
+│   ├── 📄 KAN_multi_exag.py
+│   ├── 📄 nhits_aa_multi.py
+│   └── 📄 tft_aa_exog.py
+├── 🐳 Dockerfile             # Reproduces neuralforecast_3.10 environment
+├── 📋 requirements.txt       # Pinned pip dependencies
+├── ⚙️ setup.py
+└── ⚙️ pyproject.toml
 ```
 
 ---
 
-## Acknowledgements
+## 🙏 Acknowledgements
 
 This project is built on top of [Nixtla's NeuralForecast](https://github.com/Nixtla/neuralforecast). Full credit to the original authors:
 
@@ -104,6 +124,6 @@ This project is built on top of [Nixtla's NeuralForecast](https://github.com/Nix
 }
 ```
 
-## License
+## 📝 License
 
 Apache 2.0 (inherited from NeuralForecast). See [LICENSE](./LICENSE).
