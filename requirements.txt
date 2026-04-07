@@ -1,0 +1,75 @@
+# Core ML / Deep Learning (torch installed via conda in Dockerfile)
+pytorch-lightning==2.5.2
+lightning-utilities==0.14.3
+torchmetrics==1.7.3
+
+# NeuralForecast dependencies
+coreforecast==0.0.16
+datasetsforecast==1.0.0
+statsforecast==2.0.2
+utilsforecast==0.2.15
+fugue==0.9.1
+triad==0.9.8
+
+# Data & science
+numpy==2.2.6
+pandas==2.3.0
+scipy==1.15.2
+scikit-learn==1.7.0
+statsmodels==0.14.5
+numba==0.61.2
+llvmlite==0.44.0
+polars==1.31.0
+xarray==2025.6.1
+netCDF4==1.7.4
+cftime==1.6.5
+
+# Visualization
+matplotlib==3.10.3
+seaborn==0.13.2
+
+# Geo
+geopandas==1.1.1
+pyproj==3.7.1
+shapely==2.1.1
+pyogrio==0.11.0
+
+# Transformers / HuggingFace
+transformers==4.53.0
+tokenizers==0.21.2
+safetensors==0.5.3
+huggingface-hub==0.33.2
+
+# Hyperparameter tuning
+optuna==4.4.0
+hyperopt==0.2.7
+ray==2.47.1
+
+# Arrow / IO
+pyarrow==20.0.0
+orjson==3.11.3
+
+# Misc
+tqdm==4.67.1
+pydantic==2.11.9
+pydantic_core==2.33.2
+cloudpickle==3.1.1
+fsspec==2025.5.1
+requests==2.32.4
+tenacity==9.1.2
+sympy==1.13.1
+joblib==1.5.1
+lightgbm==4.6.0
+tensorboardX==2.6.4
+
+# Jupyter
+ipython==8.32.0
+ipywidgets==8.1.7
+jupyterlab==4.4.4
+
+# Excel
+xlrd==2.0.2
+xlsxwriter==3.2.9
+
+# Nixtla API client
+nixtla==0.7.3

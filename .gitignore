@@ -1,0 +1,41 @@
+# Data & results
+full_dataset/
+dataset_example/
+Results/
+Result_analysis_section/
+fcst_allmdls_after_correctn/
+fcst_dfs_of_all_models/
+fsct_df_multivariable/
+data_together_at_daily/
+saved_models/
+saved_models_corrected/
+saved_models_multivariable/
+copies/
+Rough_model_files_after_convergence/
+Rough_model_files_beofre_idea_finalized/
+TimeGpt_runs/
+longhorizon/
+checkpoints/
+
+# Build & cache
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Lightning
+lightning_logs/
+
+# OS
+.DS_Store
+._.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
