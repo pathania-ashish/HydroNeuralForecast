@@ -2,7 +2,7 @@
 
 # 🌊 HydroNeuralForecast
 
-**Modified [Nixtla NeuralForecast](https://github.com/Nixtla/neuralforecast) (v3.0.2) for Hydrological Flood Detection**
+**Modified [Nixtla NeuralForecast](https://github.com/Nixtla/neuralforecast) (v3.0.2) for Hydrological Research**
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10-3776AB?logo=python&logoColor=white)](https://www.python.org/)
@@ -14,7 +14,7 @@
 
 ---
 
-> 🔬 This repository adapts Nixtla's NeuralForecast library for hydrological flood detection research. Key modifications include **multivariable support for models that originally lacked it** in the upstream repository, along with custom run scripts for exogenous variable handling.
+> 🔬 This repository adapts Nixtla's NeuralForecast library for hydrological research. Key modifications include **multivariable support for models that originally lacked it** in the upstream repository, along with custom run scripts for exogenous variable handling.
 
 ---
 
