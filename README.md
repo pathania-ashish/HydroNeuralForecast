@@ -1,9 +1,12 @@
-# Nixtla &nbsp; [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Statistical%20Forecasting%20Algorithms%20by%20Nixtla%20&url=https://github.com/Nixtla/neuralforecast&via=nixtlainc&hashtags=StatisticalModels,TimeSeries,Forecasting) &nbsp;[![Slack](https://img.shields.io/badge/Slack-4A154B?&logo=slack&logoColor=white)](https://join.slack.com/t/nixtlacommunity/shared_invite/zt-1pmhan9j5-F54XR20edHk0UtYAPcW4KQ)
+# HydroNeuralForecast
+
+> **This repository is a modification of [Nixtla's NeuralForecast](https://github.com/Nixtla/neuralforecast).** The original library has been adapted for hydrological flood detection research, with custom modifications to model architectures (Informer, PatchTST) and additional model run scripts for exogenous variable support.
+
+---
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/Nixtla/neuralforecast/main/nbs/imgs_indx/logo_new.png">
-<h1 align="center">Neural 🧠 Forecast</h1>
-<h3 align="center">User friendly state-of-the-art neural forecasting models</h3>
+<h1 align="center">HydroNeuralForecast</h1>
+<h3 align="center">Modified NeuralForecast for Hydrology & Flood Detection</h3>
 
 [![CI](https://github.com/Nixtla/neuralforecast/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/Nixtla/neuralforecast/actions/workflows/ci.yaml)
 [![Python](https://img.shields.io/pypi/pyversions/neuralforecast)](https://pypi.org/project/neuralforecast/)
