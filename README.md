@@ -1,6 +1,6 @@
 # HydroNeuralForecast
 
-> **This repository is a modification of [Nixtla's NeuralForecast](https://github.com/Nixtla/neuralforecast).** The original library has been adapted for hydrological flood detection research, with custom modifications to model architectures (Informer, PatchTST) and additional model run scripts for exogenous variable support.
+> **This repository is a modification of [Nixtla's NeuralForecast](https://github.com/Nixtla/neuralforecast).** The original library has been adapted for hydrological research, with custom modifications to model architectures (Informer, PatchTST) and additional model run scripts for exogenous variable support.
 
 ---
 
