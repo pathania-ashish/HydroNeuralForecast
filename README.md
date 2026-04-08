@@ -13,7 +13,7 @@
 </div>
 
 ---
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19476288.svg)](https://doi.org/10.5281/zenodo.19476288)
 > 🔬 This repository adapts Nixtla's NeuralForecast library for hydrological research. Key modifications include **multivariable support for models that originally lacked it** in the upstream repository, along with custom run scripts for exogenous variable handling.
 
 ---
